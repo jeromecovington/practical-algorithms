@@ -1,0 +1,20 @@
+{
+  "name": "practical-algorithms",
+  "version": "0.0.1",
+  "description": "Some basic algorithms",
+  "main": "index.js",
+  "engine": "node >= 6.4.0",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.15.0",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "mocha": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jerome Covington",
+  "license": "ISC"
+}
