@@ -1,7 +1,5 @@
-const primes = require('./primes');
-
 // Assumed that item is a unique value in arr.
-function binarySearch(arr, item) {
+module.exports = function binarySearch(arr, item) {
   const itemIndex = arr.indexOf(item);
   let min = 0;
   let max = arr.length - 1;
@@ -16,6 +14,4 @@ function binarySearch(arr, item) {
     }
   }
   return -1;
-}
-
-print(binarySearch(primes(25), 17));
+};
