@@ -16,7 +16,7 @@
  * @param {Number} number - the number to validate
  * @returns {Boolean} is the number valid
  */
-function luhn(number) {
+module.exports = function luhn(number) {
   let isValid = false;
   // coercion
   const arr = number.toString().split('').reverse();
@@ -34,7 +34,7 @@ function luhn(number) {
   });
 
   let sum = 0;
-  for (const i = 1; i < mapped.length; i++) { // eslint-disable-line
+  for (let i = 1; i < mapped.length; i++) { // eslint-disable-line
     // coercion
     sum += parseInt(mapped[i], 10);
   }
@@ -51,15 +51,4 @@ function luhn(number) {
   }
 
   return isValid;
-}
-
-// false
-// print(luhn(79927398710));
-// print(luhn(79927398711));
-// print(luhn(79927398712));
-
-// true
-print(luhn(79927398713));
-
-// true AmEx
-// print(luhn(347136731693028));
+};
