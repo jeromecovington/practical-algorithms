@@ -1,17 +1,20 @@
-import {
+/* global beforeEach */
+/* eslint-disable prefer-arrow-callback */
+
+const {
     describe,
     it,
-} from 'mocha';
-import { expect } from 'chai';
+} = require('mocha');
+const { expect } = require('chai');
 
-import LinkedList from './linked-list';
-import Node from './linked-list-node';
+const LinkedList = require('../linked-list');
+const Node = require('../linked-list-node');
 
-describe('Linked list class', function() {
-  describe('constructor', function() {
+describe('Linked list class', function () {
+  describe('constructor', function () {
     it('Should throw if constructor called w/wrong argument', function () {
       expect(function () {
-        const foo = new LinkedList('foo');
+        const foo = new LinkedList('foo'); // eslint-disable-line
       }).to.throw('LinkedList constructor was not called with a Node or Array as its argument.');
     });
 

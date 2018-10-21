@@ -1,10 +1,12 @@
-import {
+/* eslint-disable prefer-arrow-callback */
+
+const {
     describe,
     it,
-} from 'mocha';
-import { expect } from 'chai';
+} = require('mocha');
+const { expect } = require('chai');
 
-import Node from './linked-list-node';
+const Node = require('../linked-list-node');
 
 describe('Linked list Node class', function () {
   it('should construct with passed data', function () {
@@ -21,7 +23,7 @@ describe('Linked list Node class', function () {
     expect(a.getNext().getData()).to.equal('b');
   });
 
-  it('should set next to null by default', function() {
+  it('should set next to null by default', function () {
     const a = new Node('a');
 
     a.setNext();

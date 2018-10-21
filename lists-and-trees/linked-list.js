@@ -1,6 +1,6 @@
-import Node from './linked-list-node';
+const Node = require('./linked-list-node');
 
-export default class LinkedList {
+module.exports = class LinkedList {
   constructor(n) {
     if (n && Array.isArray(n) && n.length) {
       n.forEach((current, i) => {
@@ -33,6 +33,7 @@ export default class LinkedList {
     }
   }
 
+  /* eslint-disable consistent-return */
   get(data) {
     let current = this.root;
 
@@ -43,6 +44,7 @@ export default class LinkedList {
       current = current.getNext();
     }
   }
+  /* eslint-enable */
 
   insert(beforeData, n) {
     const before = this.get(beforeData);
@@ -76,7 +78,7 @@ export default class LinkedList {
 
   walk() {
     let current = this.root;
-    let walked = [];
+    const walked = [];
 
     while (current) {
       walked.push(current.getData());
@@ -85,4 +87,4 @@ export default class LinkedList {
 
     return walked;
   }
-}
+};
