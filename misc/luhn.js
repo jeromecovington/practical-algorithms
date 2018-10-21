@@ -17,35 +17,34 @@
  * @returns {Boolean} is the number valid
  */
 function luhn(number) {
-  var isValid = false;
+  let isValid = false;
   // coercion
-  var arr = number.toString().split('').reverse();
-  var mapped = arr.map(function (item, index) {
-
-    item = parseInt(item, 10);
+  const arr = number.toString().split('').reverse();
+  const mapped = arr.map((item, index) => {
+    item = parseInt(item, 10); // eslint-disable-line
     if ((index + 1) % 2 === 0) {
-      item *= 2;
+      item *= 2; // eslint-disable-line
     }
     if (item >= 10) {
       // coercion
-      item = parseInt(item.toString().split('')[0], 10) + parseInt(item.toString().split('')[1], 10);
+      item = parseInt(item.toString().split('')[0], 10) + parseInt(item.toString().split('')[1], 10); // eslint-disable-line
     }
 
     return item;
   });
 
-  var sum = 0;
-  for (var i = 1; i < mapped.length; i++) {
+  let sum = 0;
+  for (const i = 1; i < mapped.length; i++) { // eslint-disable-line
     // coercion
     sum += parseInt(mapped[i], 10);
   }
 
   // coercion
-  var sumArr = sum.toString().split('');
+  const sumArr = sum.toString().split('');
   // coercion
-  var unitsDigit = parseInt(sumArr[sumArr.length - 1], 10);
+  const unitsDigit = parseInt(sumArr[sumArr.length - 1], 10);
   // coercion
-  var checkSum = unitsDigit + parseInt(arr[0], 10);
+  const checkSum = unitsDigit + parseInt(arr[0], 10);
 
   if (checkSum % 10 === 0) {
     isValid = true;

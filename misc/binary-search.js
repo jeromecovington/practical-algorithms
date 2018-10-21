@@ -1,21 +1,21 @@
-var primesUpToLimit = require('./primesUpToLimit');
+const primes = require('./primes');
 
 // Assumed that item is a unique value in arr.
 function binarySearch(arr, item) {
-  var itemIndex = arr.indexOf(item);
-  var min = 0;
-  var max = arr.length - 1;
+  const itemIndex = arr.indexOf(item);
+  let min = 0;
+  let max = arr.length - 1;
   while (max >= min) {
-    let guess = Math.round((max + min)/2);
+    const guess = Math.round((max + min) / 2);
     if (guess === itemIndex) {
       return guess;
     } else if (itemIndex < guess) {
-      max--;
+      max--; // eslint-disable-line
     } else if (itemIndex > guess) {
-      min++;
+      min++; // eslint-disable-line
     }
   }
   return -1;
 }
 
-print(binarySearch(primesUpToLimit(25), 17));
+print(binarySearch(primes(25), 17));
