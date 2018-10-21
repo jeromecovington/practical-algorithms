@@ -1,7 +1,5 @@
-// primesUpToLimit(25);
-// [2, 3, 5, 7, 11, 13, 17, 19, 23]
 /* eslint-disable */
-function primes(limit) {
+module.exports = function primes(limit) {
   const primesArray = [];
 
   outerLoop:
@@ -23,9 +21,4 @@ function primes(limit) {
 
   return primesArray;
 }
-
-print('Prime numbers up to 25:');
-print(primes(25));
-
-module.exports = primes;
 /* eslint-enable */
