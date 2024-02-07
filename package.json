@@ -14,8 +14,8 @@
     "prettier-config-standard": "^7.0.0"
   },
   "scripts": {
-    "lint": "eslint **/*.js",
-    "fixup": "eslint --fix **/*.js",
+    "prettier": "prettier \"**/*.{js,md}\" --check",
+    "prettier:fix": "prettier \"**/*.{js,md}\" --write",
     "test": "mocha **/*.spec.js"
   },
   "author": "Jerome Covington",
