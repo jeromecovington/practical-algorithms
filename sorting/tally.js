@@ -1,4 +1,4 @@
-import compare from './compare';
+import compare from "./compare";
 
 export default function tally(data, callback) {
   const visited = [];
@@ -32,7 +32,7 @@ export default function tally(data, callback) {
     return null;
   });
 
-  const filtered = tallied.filter(item => item != null);
+  const filtered = tallied.filter((item) => item != null);
 
   if (callback) {
     return callback(filtered);

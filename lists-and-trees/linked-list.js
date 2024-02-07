@@ -1,4 +1,4 @@
-import Node from './linked-list-node';
+import Node from "./linked-list-node";
 
 export default class LinkedList {
   constructor(n) {
@@ -12,7 +12,9 @@ export default class LinkedList {
     } else if (n instanceof Node) {
       this.root = n;
     } else {
-      throw new Error('LinkedList constructor was not called with a Node or Array as its argument.');
+      throw new Error(
+        "LinkedList constructor was not called with a Node or Array as its argument.",
+      );
     }
   }
 

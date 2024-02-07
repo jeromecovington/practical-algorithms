@@ -2,8 +2,7 @@
 export default function primes(limit) {
   const primesArray = [];
 
-  outerLoop:
-  for (let i = 2; i <= limit; i++) {
+  outerLoop: for (let i = 2; i <= limit; i++) {
     if (i !== 2 && i % 2 === 0) {
       continue;
     }
@@ -20,5 +19,5 @@ export default function primes(limit) {
   }
 
   return primesArray;
-};
+}
 /* eslint-enable */
