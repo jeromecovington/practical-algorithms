@@ -1,10 +1,11 @@
 /* eslint no-mixed-operators: 0 */
 
-const visit = require('./visit');
-const compare = require('./compare');
-const swap = require('./swap');
+import visit from './visit';
 
-module.exports = function ponySort(data) {
+import compare from './compare';
+import swap from './swap';
+
+export default function ponySort(data) {
   const sorted = data.slice();
 
   data.forEach(() => {
@@ -20,4 +21,4 @@ module.exports = function ponySort(data) {
   });
 
   return sorted;
-};
+}

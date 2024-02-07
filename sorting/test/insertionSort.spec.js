@@ -1,8 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import chai from 'chai';
 
-const insertionSort = require('../insertionSort');
+import insertionSort from '../insertionSort';
 
 const expect = chai.expect;
 

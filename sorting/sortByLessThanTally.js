@@ -1,4 +1,4 @@
-module.exports = function (data) {
+export default function (data) {
   const maxIndex = data.length - 1;
   const sorted = [];
 

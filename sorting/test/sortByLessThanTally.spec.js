@@ -1,8 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import chai from 'chai';
 
-const sortByLessThanTally = require('../sortByLessThanTally');
+import sortByLessThanTally from '../sortByLessThanTally';
 
 const expect = chai.expect;
 

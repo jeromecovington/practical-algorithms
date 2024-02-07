@@ -1,5 +1,5 @@
 /* eslint-disable */
-module.exports = function primes(limit) {
+export default function primes(limit) {
   const primesArray = [];
 
   outerLoop:
@@ -20,5 +20,5 @@ module.exports = function primes(limit) {
   }
 
   return primesArray;
-}
+};
 /* eslint-enable */

@@ -4,7 +4,7 @@
  * @param {Number} binary - representation of a binary number (only 1s and 0s)
  * @returns {Number} decimal conversion
  */
-module.exports = function binaryToDecimal(binary) {
+export default function binaryToDecimal(binary) {
   const str = binary.toString();
   const arr = str.split('');
   const rev = arr.reverse();

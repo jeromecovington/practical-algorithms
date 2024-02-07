@@ -1,8 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import chai from 'chai';
 
-const bubbleSort = require('../bubbleSort');
+import bubbleSort from '../bubbleSort';
 
 const expect = chai.expect;
 

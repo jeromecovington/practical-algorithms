@@ -1,8 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import chai from 'chai';
 
-const binaryToDecimal = require('../binaryToDecimal');
+import binaryToDecimal from '../binaryToDecimal';
 
 const expect = chai.expect;
 

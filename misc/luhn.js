@@ -16,7 +16,7 @@
  * @param {Number} number - the number to validate
  * @returns {Boolean} is the number valid
  */
-module.exports = function luhn(number) {
+export default function luhn(number) {
   let isValid = false;
   // coercion
   const arr = number.toString().split('').reverse();

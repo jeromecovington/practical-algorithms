@@ -1,5 +1,5 @@
 /* eslint no-param-reassign: 0 */
-module.exports = function swap(data, a, b) {
+export default function swap(data, a, b) {
   const memberA = data[a];
   const memberB = data[b];
 

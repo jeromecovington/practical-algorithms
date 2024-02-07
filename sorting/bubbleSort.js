@@ -1,8 +1,8 @@
-const visit = require('./visit');
-const compare = require('./compare');
-const swap = require('./swap');
+import visit from './visit';
+import compare from './compare';
+import swap from './swap';
 
-module.exports = function bubbleSort(data) {
+export default function bubbleSort(data) {
   let sorted = data.slice();
 
   function sort() {
@@ -27,4 +27,4 @@ module.exports = function bubbleSort(data) {
   sort();
 
   return sorted;
-};
+}

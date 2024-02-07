@@ -1,8 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import chai from 'chai';
 
-const swap = require('../swap');
+import swap from '../swap';
 
 const expect = chai.expect;
 
