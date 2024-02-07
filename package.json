@@ -16,5 +16,6 @@
     "test": "mocha **/*.spec.js"
   },
   "author": "Jerome Covington",
-  "license": "ISC"
+  "license": "ISC",
+  "type": "module"
 }
