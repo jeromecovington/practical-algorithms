@@ -7,4 +7,4 @@ export default function swap(data, a, b) {
   data[a] = memberB;
 
   return data;
-};
+}

@@ -6,15 +6,15 @@
  */
 export default function binaryToDecimal(binary) {
   const str = binary.toString();
-  const arr = str.split('');
+  const arr = str.split("");
   const rev = arr.reverse();
   let decimal = 0;
 
   rev.forEach((value, index) => {
-    if (value === '1') {
+    if (value === "1") {
       decimal += 2 ** index;
     }
   });
 
   return decimal;
-};
+}

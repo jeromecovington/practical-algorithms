@@ -10,4 +10,4 @@ export default function (arr, indexes, callback) {
   }
 
   return members;
-};
+}

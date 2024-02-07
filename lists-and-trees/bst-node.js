@@ -5,6 +5,10 @@ export default class Node {
     this.right = null;
   }
 
+  setData(d) {
+    this.data = d;
+  }
+
   getData() {
     return this.data;
   }

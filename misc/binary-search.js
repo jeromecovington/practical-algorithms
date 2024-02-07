@@ -14,4 +14,4 @@ export default function binarySearch(arr, item) {
     }
   }
   return -1;
-};
+}

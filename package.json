@@ -4,15 +4,18 @@
   "description": "Some basic algorithms",
   "main": "index.js",
   "engine": "node >= 18",
-  "dependencies": {},
   "devDependencies": {
     "chai": "^5.0.3",
     "eslint": "^8.56.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "prettier": "^3.2.5",
+    "prettier-config-standard": "^7.0.0"
   },
   "scripts": {
+    "prettier": "prettier \"**/*.{js,md}\" --check",
+    "prettier:fix": "prettier \"**/*.{js,md}\" --write",
     "test": "mocha **/*.spec.js"
   },
   "author": "Jerome Covington",

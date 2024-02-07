@@ -1,9 +1,9 @@
 /* eslint no-mixed-operators: 0 */
 
-import visit from './visit';
+import visit from "./visit";
 
-import compare from './compare';
-import swap from './swap';
+import compare from "./compare";
+import swap from "./swap";
 
 export default function ponySort(data) {
   const sorted = data.slice();

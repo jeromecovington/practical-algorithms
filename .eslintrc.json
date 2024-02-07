@@ -1,6 +1,8 @@
 {
-    "extends": "airbnb-base",
-    "plugins": [
-        "import"
-    ]
+  "extends": [
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }

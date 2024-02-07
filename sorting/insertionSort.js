@@ -1,6 +1,6 @@
-import visit from './visit';
-import compare from './compare';
-import swap from './swap';
+import visit from "./visit";
+import compare from "./compare";
+import swap from "./swap";
 
 export default function insertionSort(data) {
   let sorted = data.slice();

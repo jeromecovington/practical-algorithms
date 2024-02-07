@@ -19,7 +19,7 @@
 export default function luhn(number) {
   let isValid = false;
   // coercion
-  const arr = number.toString().split('').reverse();
+  const arr = number.toString().split("").reverse();
   const mapped = arr.map((item, index) => {
     item = parseInt(item, 10); // eslint-disable-line
     if ((index + 1) % 2 === 0) {
@@ -27,20 +27,23 @@ export default function luhn(number) {
     }
     if (item >= 10) {
       // coercion
-      item = parseInt(item.toString().split('')[0], 10) + parseInt(item.toString().split('')[1], 10); // eslint-disable-line
+      item =
+        parseInt(item.toString().split("")[0], 10) +
+        parseInt(item.toString().split("")[1], 10); // eslint-disable-line
     }
 
     return item;
   });
 
   let sum = 0;
-  for (let i = 1; i < mapped.length; i++) { // eslint-disable-line
+  for (let i = 1; i < mapped.length; i++) {
+    // eslint-disable-line
     // coercion
     sum += parseInt(mapped[i], 10);
   }
 
   // coercion
-  const sumArr = sum.toString().split('');
+  const sumArr = sum.toString().split("");
   // coercion
   const unitsDigit = parseInt(sumArr[sumArr.length - 1], 10);
   // coercion
@@ -51,4 +54,4 @@ export default function luhn(number) {
   }
 
   return isValid;
-};
+}
