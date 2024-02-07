@@ -1,10 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import binaryToDecimal from '../binaryToDecimal';
-
-const expect = chai.expect;
 
 describe('binary to decimal', () => {
   it('should convert from binary representation to decimal', () => {

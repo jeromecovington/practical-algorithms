@@ -1,11 +1,9 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import visit from '../visit';
 import compare from '../compare';
-
-const expect = chai.expect;
 
 describe('visit and compare', () => {
   it('should return the result of comparing the specified members', () => {

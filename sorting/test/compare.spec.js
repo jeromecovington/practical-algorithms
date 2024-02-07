@@ -1,10 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import compare from '../compare';
-
-const expect = chai.expect;
 
 describe('compare', () => {
   it('should return -1 if a < b', () => {

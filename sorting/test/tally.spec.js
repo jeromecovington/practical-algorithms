@@ -1,10 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import tally from '../tally';
-
-const expect = chai.expect;
 
 describe('tally', () => {
   it('should create a less than tally for single values', () => {

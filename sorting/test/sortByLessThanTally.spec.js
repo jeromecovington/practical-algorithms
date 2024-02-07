@@ -1,11 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import sortByLessThanTally from '../sortByLessThanTally';
-
-const expect = chai.expect;
-
 
 describe('sort by less than tally', () => {
   it('should return the members sorted into place', () => {

@@ -1,10 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import insertionSort from '../insertionSort';
-
-const expect = chai.expect;
 
 describe('insertion sort', () => {
   it('should return the sorted array, from an input array of unique members', () => {

@@ -1,10 +1,8 @@
 /* global describe, it */
 
-import chai from 'chai';
+import { expect } from 'chai';
 
 import visit from '../visit';
-
-const expect = chai.expect;
 
 describe('visit', () => {
   it('should return the members at the defined indexes if no callback provided', () => {
