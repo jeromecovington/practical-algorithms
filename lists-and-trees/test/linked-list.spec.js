@@ -1,14 +1,11 @@
 /* global beforeEach */
 /* eslint-disable prefer-arrow-callback */
 
-const {
-    describe,
-    it,
-} = require('mocha');
-const { expect } = require('chai');
+import { describe, it } from 'mocha';
 
-const LinkedList = require('../linked-list');
-const Node = require('../linked-list-node');
+import { expect } from 'chai';
+import LinkedList from '../linked-list';
+import Node from '../linked-list-node';
 
 describe('Linked list class', function () {
   describe('constructor', function () {

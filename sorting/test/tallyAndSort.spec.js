@@ -1,11 +1,9 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const tally = require('../tally');
-const sort = require('../sortByLessThanTally');
-
-const expect = chai.expect;
+import tally from '../tally';
+import sort from '../sortByLessThanTally';
 
 describe('tally and sort', () => {
   it('should return the sorted array, from an input array of unique members', () => {

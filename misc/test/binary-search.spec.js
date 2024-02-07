@@ -1,13 +1,10 @@
 /* eslint-disable prefer-arrow-callback */
 
-const {
-    describe,
-    it,
-} = require('mocha');
-const { expect } = require('chai');
+import { describe, it } from 'mocha';
 
-const binarySearch = require('../binary-search');
-const primes = require('../primes');
+import { expect } from 'chai';
+import binarySearch from '../binary-search';
+import primes from '../primes';
 
 describe('Binary search', function () {
   it('should return index of the correct guess', function () {

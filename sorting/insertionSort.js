@@ -1,8 +1,8 @@
-const visit = require('./visit');
-const compare = require('./compare');
-const swap = require('./swap');
+import visit from './visit';
+import compare from './compare';
+import swap from './swap';
 
-module.exports = function insertionSort(data) {
+export default function insertionSort(data) {
   let sorted = data.slice();
   let increment = 1;
 
@@ -32,4 +32,4 @@ module.exports = function insertionSort(data) {
   sort(increment);
 
   return sorted;
-};
+}

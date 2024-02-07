@@ -1,10 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const bubbleSort = require('../bubbleSort');
-
-const expect = chai.expect;
+import bubbleSort from '../bubbleSort';
 
 describe('bubble sort', () => {
   it('should return the sorted array, from an input array of unique members', () => {

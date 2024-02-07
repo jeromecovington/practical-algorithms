@@ -1,10 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const ponySort = require('../ponySort');
-
-const expect = chai.expect;
+import ponySort from '../ponySort';
 
 describe('pony sort', () => {
   it('should not return the sorted array', () => {

@@ -1,5 +1,5 @@
 // Assumed that item is a unique value in arr.
-module.exports = function binarySearch(arr, item) {
+export default function binarySearch(arr, item) {
   const itemIndex = arr.indexOf(item);
   let min = 0;
   let max = arr.length - 1;

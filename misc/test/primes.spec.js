@@ -1,12 +1,9 @@
 /* eslint-disable prefer-arrow-callback */
 
-const {
-    describe,
-    it,
-} = require('mocha');
-const { expect } = require('chai');
+import { describe, it } from 'mocha';
 
-const primes = require('../primes');
+import { expect } from 'chai';
+import primes from '../primes';
 
 describe('Primes up to limit', function () {
   it('should return array of primes up to limit', function () {

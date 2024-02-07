@@ -1,11 +1,9 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const visit = require('../visit');
-const compare = require('../compare');
-
-const expect = chai.expect;
+import visit from '../visit';
+import compare from '../compare';
 
 describe('visit and compare', () => {
   it('should return the result of comparing the specified members', () => {

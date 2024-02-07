@@ -1,10 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const swap = require('../swap');
-
-const expect = chai.expect;
+import swap from '../swap';
 
 describe('swap', () => {
   it('should mutate and return the array with swapped members at the defined indexes', () => {

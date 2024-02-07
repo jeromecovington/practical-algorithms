@@ -1,6 +1,6 @@
-const compare = require('./compare');
+import compare from './compare';
 
-module.exports = function tally(data, callback) {
+export default function tally(data, callback) {
   const visited = [];
 
   const tallied = data.map((tallyItemValue, tallyItemIndex) => {
@@ -39,4 +39,4 @@ module.exports = function tally(data, callback) {
   }
 
   return filtered;
-};
+}

@@ -1,4 +1,4 @@
-module.exports = function (arr, indexes, callback) {
+export default function (arr, indexes, callback) {
   const members = [];
 
   indexes.forEach((i) => {

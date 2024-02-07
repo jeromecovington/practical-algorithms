@@ -1,11 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const sortByLessThanTally = require('../sortByLessThanTally');
-
-const expect = chai.expect;
-
+import sortByLessThanTally from '../sortByLessThanTally';
 
 describe('sort by less than tally', () => {
   it('should return the members sorted into place', () => {

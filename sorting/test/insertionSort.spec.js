@@ -1,10 +1,8 @@
 /* global describe, it */
 
-const chai = require('chai');
+import { expect } from 'chai';
 
-const insertionSort = require('../insertionSort');
-
-const expect = chai.expect;
+import insertionSort from '../insertionSort';
 
 describe('insertion sort', () => {
   it('should return the sorted array, from an input array of unique members', () => {

@@ -1,6 +1,6 @@
-const Node = require('./linked-list-node');
+import Node from './linked-list-node';
 
-module.exports = class LinkedList {
+export default class LinkedList {
   constructor(n) {
     if (n && Array.isArray(n) && n.length) {
       n.forEach((current, i) => {
@@ -87,4 +87,4 @@ module.exports = class LinkedList {
 
     return walked;
   }
-};
+}

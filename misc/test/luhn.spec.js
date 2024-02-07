@@ -1,12 +1,9 @@
 /* eslint-disable prefer-arrow-callback */
 
-const {
-  describe,
-  it,
-} = require('mocha');
-const { expect } = require('chai');
+import { describe, it } from 'mocha';
 
-const luhn = require('../luhn');
+import { expect } from 'chai';
+import luhn from '../luhn';
 
 describe('Luhn algorithm', function () {
   it('should return true for valid numbers', function () {

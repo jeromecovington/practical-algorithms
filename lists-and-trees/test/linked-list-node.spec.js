@@ -1,12 +1,9 @@
 /* eslint-disable prefer-arrow-callback */
 
-const {
-    describe,
-    it,
-} = require('mocha');
-const { expect } = require('chai');
+import { describe, it } from 'mocha';
 
-const Node = require('../linked-list-node');
+import { expect } from 'chai';
+import Node from '../linked-list-node';
 
 describe('Linked list Node class', function () {
   it('should construct with passed data', function () {
