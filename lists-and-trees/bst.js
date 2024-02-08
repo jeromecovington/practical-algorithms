@@ -99,11 +99,13 @@ export default class BinaryTree {
 
       if (!current.getLeft() && n.getData() < current.getData()) {
         current.setLeft(n);
+        this.size++;
         return;
       }
 
       if (!current.getRight() && n.getData() > current.getData()) {
         current.setRight(n);
+        this.size++;
         return;
       }
 
@@ -115,8 +117,6 @@ export default class BinaryTree {
         current = current.getRight();
       }
     }
-
-    this.size++;
   }
 
   getMinimum(n) {
@@ -150,6 +150,7 @@ export default class BinaryTree {
       if (current !== n) {
         if (parent.getLeft() === current) {
           parent.setLeft(null);
+          this.size--;
         } else {
           parent.setRight(null);
         }
