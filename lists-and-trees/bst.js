@@ -196,9 +196,7 @@ export default class BinaryTree {
 
       if (d < current.getData()) {
         current = current.getLeft();
-      }
-
-      if (d > current.getData()) {
+      } else if (d > current.getData()) {
         current = current.getRight();
       }
     }
